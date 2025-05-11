@@ -415,8 +415,11 @@
 .address-logo-text{
     display: flex;
 }
-.sach-item-img img{
-    width: 300px;
+.sach-item-img a img{
+    width: 80%;
+}
+.sach-item-img {
+    margin-bottom: 10px; /* Khoảng cách giữa ảnh và tên sách */
 }
 .sach-item{
     display: grid;
@@ -448,14 +451,15 @@
     transform: scale(1.05); /* Thu nhỏ một chút khi nhấn */
 }
 .sach-item-text{
-    padding-top: 12px;
-    padding-bottom: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .sach-item-text p{
     font-size: 20px;
 }
 .sach-item-price{
     padding-bottom: 12px;
+    margin-bottom: 10px;
 }
 .sach-item-price p{
     font-size: 20px;
@@ -479,13 +483,18 @@
     transform: scale(1.1); /* Phóng to ảnh lên 1.1 lần khi hover */
 }
 .sach-item-attribute {
-    border: 3px solid #ccc; /* Tạo viền xung quanh mỗi khung */
-    padding: 16px; /* Thêm khoảng cách bên trong khung */
-    margin-bottom: 20px; /* Khoảng cách giữa các khung */
-    border-radius: 8px; /* Bo góc cho các khung */
-    background-color: #fff; /* Màu nền cho khung */
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho khung */
-    text-align: center; /* Canh giữa nội dung trong khung */
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    justify-content: space-between; /* Căn đều các phần tử dọc theo chiều cao của khối */
+    border: 3px solid #ccc; /* Viền cho các phần tử */
+    padding: 16px; /* Khoảng cách trong các phần tử */
+    margin-bottom: 20px; /* Khoảng cách giữa các khối */
+    border-radius: 8px; /* Bo góc cho khối */
+    background-color: #fff; /* Màu nền cho khối */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Bóng đổ cho khối */
+    text-align: center; /* Căn giữa văn bản trong khối */
+    height: 400px; /* Chiều cao cố định cho các phần tử */
 }
 
 /* Thêm hiệu ứng hover khi di chuột vào các khung */

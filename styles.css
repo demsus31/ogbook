@@ -413,17 +413,16 @@
     display: flex;
 }
 .sach-item{
-    display: flex;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
 .sach-item-logo img{
-    width: 400px;
+    width: 70%;
 }
 .sach-item-text p{
     font-size: 40px;
     font-weight: bold;
-    padding-left: 40px;
 }
 /* Thêm hiệu ứng hover cho .sach-wrapper */
 .sach-wrapper {
